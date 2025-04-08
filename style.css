@@ -1,0 +1,502 @@
+/* fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* restes */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    font-family: 'Poppins',sans-serif;
+    color: var(--primaty-texy-color);
+}
+
+:root {
+    --primaty-texy-color: #183b56;
+    --seconday-text-color: #577592;
+    --accent-color:#2294ed;
+    --accent-color-darker: #1d69a3;
+    --padding-inline-section:20px
+}
+
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size:1.5rem;
+}
+
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.25rem;
+    color: var(--seconday-text-color);
+    line-height: 1.8rem;
+} 
+a {
+    text-decoration: none; 
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+/* utility classes */
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.hover-link{
+    color: var(--primaty-texy-color);
+    transition: 0.2s ease-out;
+}
+.hover-link:hover{
+    color: var(--accent-color);
+}
+
+.primary-button{
+    background-color: var(--accent-color);
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--seconday-text-color);
+    transition: 0.2s ease-out;
+    color: white !important;
+}
+.primary-button:hover{
+    background-color: var(--accent-color-darker);
+}
+
+.secondary-button{
+    border: 0.5px solid var(--seconday-text-color);
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 12px 24px ;
+}
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+/* Top-banner */
+
+.banner-text{
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.top-banner{
+    background-color: #4fb3d4;
+    background-image: url(./asset/asset\ 28.png);
+    background-size: 300px;
+}
+
+/* Nav-bar */ 
+
+.main-nav{
+    margin-top: 20px;
+        justify-content: space-between;
+}
+
+.company-logo img{
+    width: 200px;
+}
+
+.nav-links{
+    flex-basis:730px ;
+}
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+
+/* header-section */
+
+header{
+    padding: 50px var(--padding-inline-section);
+}
+
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+.header-left{
+    max-width: 40vw;
+}
+.header-left h1{
+    margin-top: 20px;
+}
+.get-button{
+    margin-top: 20px;
+}
+.header-right img {
+    width: 600px;
+}
+
+/* companies-section */
+
+.companies-header{
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primaty-texy-color);
+}
+
+.logos{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    height: 46px;
+
+}
+
+/* feturea-header */
+
+.feature-section{
+    padding: 80px var(--padding-inline-section);
+    background-image: url(asset/asset\ 29.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.feturea-header{
+    text-align: center;
+}
+
+.feture-heading-text{
+margin-bottom: 20px;
+}
+.feturea-area{
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: var(--padding-inline-section);
+}
+
+.feturea-card{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    justify-content: space-between;
+    text-align: center ;
+} 
+
+/* big-feture-section */
+
+.big-feature-section{
+    padding: 30px var(--padding-inline-section) 0 ;
+}
+
+.big-feature-container{
+    gap: 30px;
+}
+.feture-img img{
+    width: 100%;
+}
+.feture-text{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* example-section */
+
+.example-header{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.example-card{
+    
+    width: 23%;
+    position: relative;
+    min-height: 350px;
+    transition: 0.2s ease-out;
+}
+
+.example-card:hover{
+    box-shadow: 0 0 10px #888;
+}
+.example-card:nth-child(1){
+   
+    background-image: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)) ,url(asset/asset\ 35.jpeg);
+    background-size: cover;
+}
+.example-card:nth-child(2){
+  
+    background-image: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)) ,url(asset/asset\ 34.jpeg);
+    background-size: cover;
+}
+.example-card:nth-child(3){
+ 
+    background-image: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)) ,url(asset/asset\ 36.jpeg);
+    background-size: cover;   
+}
+.example-card:nth-child(4){
+    background-color: rgb(85, 102, 85);
+    background-image: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)) ;
+    background-size: cover;
+}
+
+.example-area{
+margin-block: 30px;
+ justify-content: space-between;
+ margin-left: 30px;
+ margin-right: 30px;
+}
+
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+   
+}
+
+/* cta-section */
+.cta-section-container{
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+.cta-section{
+    padding: 120px var(--padding-inline-section) 80px;
+    background-color: #183b54;
+}
+
+/* footer */
+
+footer{
+    padding-block: 80px;
+    background-color: #edf2fa;
+}
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* sub-footer */
+
+.subfooter{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+
+}
+.subfooter-container{
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Responsive Styles */
+
+/* Tablets and below */
+@media screen and (max-width: 991px) {
+    h3 {
+        font-size: 1.2rem;
+    }
+    .nav-toggle { /* Assuming you'll add a hamburger toggle button with this class in HTML */
+        display: block; /* Show the toggle button */
+        margin-right: 20px; /* Add some space */
+    }
+    .main-nav {
+        overflow: initial; /* Allow content to overflow if needed */
+    }
+    .nav-links {
+        position: absolute;
+        background-color: white;
+        left: -100%; /* Hide off-screen */
+        top: 100%; /* Position below the nav bar */
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.2s ease-in-out;
+    }
+    .nav-links.active { /* Class to toggle visibility */
+        left: 0;
+    }
+    .nav-links ul {
+        flex-direction: column;
+    }
+    .header-section {
+        flex-direction: column-reverse; /* Stack vertically, image first */
+    }
+    .header-left {
+        max-width: 100%; /* Take full width */
+        text-align: center;
+    }
+    .feturea-card {
+        max-width: 45%; /* Two cards per row */
+        min-width: 250px; /* Ensure minimum width */
+    }
+    .big-feature-container, .big-feature-container#second-big-feature {
+       flex-direction: column-reverse; /* Stack vertically */
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center; /* Center align columns */
+    }
+    .link-column {
+        align-items: center; /* Center align links within columns */
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 767px) {
+    :root {
+        --padding-inline-section: 15px; /* Reduce padding */
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .primary-button, .secondary-button {
+        font-size: 0.9rem; /* Slightly smaller buttons */
+        padding: 10px 18px;
+    }
+    .header-section {
+        gap: 30px;
+    }
+    .header-right img {
+        width: 100%; /* Make image responsive */
+    }
+    .logos {
+        justify-content: center; /* Center logos */
+        gap: 20px;
+    }
+    .logo {
+         height: 36px; /* Slightly smaller logos */
+    }
+    .feature-section {
+        padding: 40px var(--padding-inline-section);
+    }
+    .feturea-area {
+        gap: 20px; /* Reduce gap */
+        justify-content: center;
+    }
+    .feturea-card {
+        max-width: 100%; /* One card per row */
+    }
+    .big-feature-section {
+        padding: 30px var(--padding-inline-section) 0;
+    }
+    .example-area {
+        gap: 20px; /* Reduce gap */
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .example-card {
+        width: 90%; /* Adjust width */
+        min-height: 250px;
+    }
+    .cta-section {
+        padding: 60px var(--padding-inline-section) 60px; /* Adjust padding */
+        text-align: center;
+    }
+     .subfooter-container {
+        flex-direction: column; /* Stack links vertically */
+        gap: 15px;
+    }
+     /* Add display: none; to hide nav-links by default on mobile */
+    .nav-links {
+        display: none; 
+    }
+    /* Style the toggle button (you need to add the HTML for this) */
+    .nav-toggle {
+        display: block; /* Ensure it's visible */
+        /* Add styles for your hamburger icon here */
+        font-size: 1.5rem;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: var(--primaty-texy-color); /* Or your desired color */
+    }
+     /* When .nav-links has the .active class (toggled by JS), display it */
+    .nav-links.active {
+        display: flex; /* Or block, depending on how you structure the ul */
+        position: absolute;
+        background-color: white;
+        left: 0; 
+        top: 70px; /* Adjust based on your nav height */
+        width: 100%;
+        padding-block: 20px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        z-index: 100; /* Ensure it's above other content */
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center links */
+    }
+     .nav-links.active ul {
+        flex-direction: column;
+        gap: 20px; /* Adjust gap for vertical layout */
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* Smaller mobile devices */
+@media screen and (max-width: 479px) {
+     :root {
+        --padding-inline-section: 10px; /* Further reduce padding */
+    }
+     h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .top-banner {
+         background-size: 200px; /* Smaller background image */
+    }
+     .banner-text {
+        padding: 10px 15px; /* Adjust padding */
+        font-size: 0.9rem;
+    }
+    .company-logo img {
+        width: 150px; /* Smaller logo */
+    }
+    .feturea-card {
+        gap: 15px;
+    }
+    .cta-section-container h2 {
+        font-size: 1.5rem; /* Adjust CTA heading */
+    }
+}
